@@ -1,0 +1,22 @@
+<h1>pizza</h1>
+
+<h2></h2>
+
+<ul>
+  {{#each cats}}
+    {{#unless this.sleepy}}
+      <li>
+        {{this.name}}
+
+
+        {{> cats/delete-cat}}
+      </li>
+    {{/unless}}
+  {{/each}}
+</ul>
+
+
+
+
+
+
